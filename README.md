@@ -15,7 +15,7 @@ Email: mhegde@broadinstitute.org, rhanna@broadinstitute.org
 
 **Version:** 2.0 (debugged and updated)
 
-**Contributors:** Murugesh N (debugging and bug fixes)
+**Contributors:** Murugesh Narayanappa (mnarayan@stanford.edu) (debugging and bug fixes)
 
 ---
 
