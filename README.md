@@ -54,3 +54,12 @@ Whether to filter out edits in a GC motif
 
 **Output name:**  
 Name for output folder  
+
+## Appending Missed Mutations from the Base Editor Design Tool:
+A custom function has been added to account for previously missed mutations. Please refer to the .Rmd file, which includes both the code and an example.
+Purpose: Identify and append these missed dual-edit mutations and their categories to the output dataframe.
+Background: The tool predicts amino acid changes by evaluating one nucleotide at a time.However, when a codon contains “AA” or “CC” in the first two positions (before the wobble base), in either strand orientation (5’→3’ or 3’→5’) the base editor is likely to edit both nucleotides simultaneously:
+Adenine Base Editor (ABE): AA → GG
+Cytosine Base Editor (CBE): CC → TT
+Since the tool only evaluates single-nucleotide edits, it does not predict the amino acid outcomes resulting from these probable dual-edit events by the base editor.
+
